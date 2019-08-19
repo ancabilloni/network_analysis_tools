@@ -79,10 +79,15 @@ class CanSignalPlotter():
         sys.exit(self.app.exec_())
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
+    if len(sys.argv) > 2:
         _wanted_frame_id = int(sys.argv[1],0)
-        # _wanted_frame_id = sys.argv[1]
+        _rate = float(sys.argv[2])
+    elif len(sys.argv) > 1:
+        _wanted_frame_id = int(sys.argv[1],0)
+        _rate = 100
     else:
         _wanted_frame_id = None
-    m = CanSignalPlotter(x_range=500, rate=100, wanted_frame_id = _wanted_frame_id)
+        _rate = 100
+        
+    m = CanSignalPlotter(x_range=500, rate=_rate, wanted_frame_id = _wanted_frame_id)
     m.run()

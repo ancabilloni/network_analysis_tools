@@ -14,8 +14,11 @@
 ### Run
 ```
 cd path/to/network_analysis/canbus
-./main.py can_id
+./main.py can_id expect_coming_rate
 ```
 
-For example: `./main.py 0xA12`
+For example: `./main.py 0xA12 100`
+
+`./main.py ` only: read any incoming can frame
+`./main.py can_id` only: expect specific can frame with default expected rate 100
 
