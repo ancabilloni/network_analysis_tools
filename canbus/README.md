@@ -4,6 +4,7 @@
 - Plot specific can frame cycle and its time difference between each signal.
 - Assist evaluating desired can rate from sender
 
+![pic](https://github.com/ancabilloni/network_analysis_tools/blob/master/canbus/can_signal_plot.png)
 
 ### Require
 - Python3 or 2. The script is test on Python3 but should work on cross platform.
