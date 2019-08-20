@@ -7,6 +7,7 @@
 ![pic](https://github.com/ancabilloni/network_analysis_tools/blob/master/canbus/can_signal_plot.png)
 
 ### Require
+- Linux (tested on Ubuntu 18.04, but should also work on system with SocketCAN)
 - Python3 or 2. The script is test on Python3 but should work on cross platform.
 - pyqtgraph: `pip3 install pyqtgraph`
 - PyQt5 (or PyQt4 or PySide): `pip3 install PyQt5`

@@ -30,7 +30,7 @@ class CanSignalPlotter():
         self.plt.showGrid(x=True, y=True)
         self.plt.setLabel('left', 'Time', 's')
         self.plt.setLabel('bottom', 'Signals', '')
-        self.plt.setYRange((1/rate)*0.9, (1/rate)*1.1, padding=0) # Set fixed range for y (allow +/- 10 %)
+        self.plt.setYRange((1.0/rate)*0.9, (1.0/rate)*1.1, padding=0) # Set fixed range for y (allow +/- 10 %)
         self.curve = self.plt.plot(self.x, self.y, pen=(0,255,255))
         
         # Set up socketcan and QTimer
