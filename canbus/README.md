@@ -11,6 +11,7 @@
 - pyqtgraph: `pip3 install pyqtgraph`
 - PyQt5 (or PyQt4 or PySide): `pip3 install PyQt5`
 - python-can: `pip3 install python-can`
+- PC with either embedded CAN device or CAN-USB Adapter set up for CAN0
 
 ### Run
 ```
